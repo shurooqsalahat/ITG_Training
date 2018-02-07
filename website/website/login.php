@@ -34,20 +34,17 @@
 					<span class="login100-form-title">
 						Member Login
 					</span>
-					<?php
+		            <?php
                        session_start();
 			           if(isset($_SESSION['message'])){
 		                  if($_SESSION['message']=="error"){
-							   echo'<p class="wrap-input100 error"  style="color:#ff0000;" >Check data please!</p>';
-							    unset($_SESSION['message']); 
+						  echo'<p class="wrap-input100 error"  style="color:#ff0000;" >Check data please!</p>';
+						  unset($_SESSION['message']); 
 						  }
-						  else{
-							  
-							   echo'<p class="wrap-input100 error"  style="color:#ff0000;" >This user does not exist, Register please</p>';
-						  }
-		              
-		             
-			            }
+						  else{							  
+						   echo'<p class="wrap-input100 error"  style="color:#ff0000;" >This user does not exist, Register please</p>';
+						  }          
+		                }
 
 				      ?> 
 
@@ -55,7 +52,7 @@
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+						   <i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 

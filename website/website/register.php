@@ -41,18 +41,15 @@
                        session_start();
 			           if(isset($_SESSION['message'])){
 		                  if($_SESSION['message']=="error"){
-							   echo'<p class="wrap-input100 error"  style="color:#ff0000;" >This user already exist</p>';
-							    unset($_SESSION['message']); 
+							 echo'<p class="wrap-input100 error"  style="color:#ff0000;" >This user already exist</p>';
+							 unset($_SESSION['message']); 
 						  }
-						  else if($_SESSION['message']=="done"){
+						    else if($_SESSION['message']=="done"){
 							  
-							   echo'<p class="wrap-input100 error"  style="color:#33cc33;" >Congratulation , You can logged in now</p>';
-							    unset($_SESSION['message']); 
-						  }
-		              
-		             
+							  echo'<p class="wrap-input100 error"  style="color:#33cc33;" >Congratulation , You can logged in now</p>';
+							  unset($_SESSION['message']); 
+						  }		              		             
 			            }
-
 				      ?> 
                        <div class="wrap-input100 validate-input" data-validate = "full name is required">
 						<input class="input100" type="text" name="full-name" placeholder="full-name">
@@ -83,18 +80,11 @@
 							<i  class="fa fa-home" aria-hidden="true"></i>
 						</span>
 					</div>
-					
-					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Register
 						</button>
 					</div>
-					
-					
-
-				
-
 					<div class="text-center p-t-12">
 						<span class="txt1">
 							Already have acount?
